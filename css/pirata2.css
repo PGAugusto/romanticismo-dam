@@ -1,0 +1,38 @@
+/***********************************************************************/
+/*     Web del Romanticismo - hoja de estilo de poema con foto de fondo*/
+/*     Autora : Pilar González Augusto                                 */
+/*     versión 1.0  -  8/11/2022                                       */
+/***********************************************************************/
+
+/*****************  estilo general *************************************/
+
+@font-face {
+    font-family: escritura;
+    src: url('../fonts/DancingScript-VariableFont_wght.ttf');
+}
+
+body {font-family:escritura;
+      font-size:1.2em;
+     /* ahora colocamos una sola imagen de buena calidad de fondo */
+     background-image: url('../images/zoltan-tasi-HTpAIzZRHvw-unsplash.jpg');
+     background-color: rgb(26,21,17);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position:center;
+    }
+
+#wrapper {color:rgb(253,226,208);
+          margin-left:5%;
+          height:100vh;}
+
+/* el vinculo tiene un color por defecto, lo desactivamos y colocamos el nuestro */
+/* el selector a está "puesto en contexto": a dentro de #wrapper                 */
+#wrapper a {
+             color:rgb(253,226,208);
+           }
+
+/* a:hover es una PSEUDOCLASE: al poner el ratón encima, hay un comportamiento
+           dinámico desde el estilo, sin necesidad de javascript                 */
+#wrapper a:hover {color:rgb(179, 138, 112);}
+
+.fa {font-size:200% !important;}
