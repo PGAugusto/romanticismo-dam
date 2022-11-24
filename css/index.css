@@ -19,13 +19,22 @@
 
 * {box-sizing:border-box;}   
 
-body { background-color: rgb(172, 143, 143); /* ya lo quitaré */
+body { background-color: rgb(196, 172, 172); /* ya lo quitaré */
        font-family:texto;
      }
 
 #wrapper {background-color: #fff;
           width:80%;
           margin:auto;}
+
+/****** título de secciones **********/
+
+.titulo-seccion {font-family: titulos;
+        font-size: 3rem;
+        text-align:center;
+        font-weight:bold;
+        color:darkred;
+        padding:4% 0;}
 
 
 /***************  HERO SECTION  VERSION 1******************************************/
@@ -50,6 +59,7 @@ body { background-color: rgb(172, 143, 143); /* ya lo quitaré */
           margin: auto;
           padding:20px;
           margin-top:20%;
+          color:rgb(78, 0, 0);
 }
 
 /**************************** HERO SECTION VERSION 2 ***********************/
@@ -113,6 +123,48 @@ body { background-color: rgb(172, 143, 143); /* ya lo quitaré */
           padding:20px;
           }
 
+/**************************** SECCIÓN INTRODUCCIÓN **************************/
+
+
+/**************************** SECCIÓN IDEAS ********************************/
+
+#ideas {background-color: #f1f1f1;}
+
+/**** contenedor grid  **************/
+.grid2 {display:grid;
+        grid-template-columns: 50% 50%;}
+
+/**** que corra el aire (ver box-sizing arriba) ***/
+.texto {padding:20px;}
+
+/***** selector combinado (img DENTRO de .col2) ***/
+.col2 img {width:100%;}
+
+
+/**************************** SECCIÓN AUTORES *****************************/
+
+.grid4 {display:grid;
+       grid-template-columns: 25% 25% 25% 25%;}
+
+.col4 {padding:20px;}      
+
+.card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+      }
+      
+      /* On mouse-over, add a deeper shadow */
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      /* Add some padding inside the card container */
+      .container {
+        padding: 2px 16px;
+      }
+
+
 /**************************** MEDIA QUERIES *******************************/
 
 @media only screen and (width<=1000px){
@@ -120,7 +172,9 @@ body { background-color: rgb(172, 143, 143); /* ya lo quitaré */
         #wrapper {width:100%;
                   font-size:2rem;}
 
-        
+        .grid2 {grid-template-columns:100%;} /* el grid pasa a ser de 1 columna en tablets */
+
+        .grid4 {grid-template-columns: 50% 50%;}
         
 }
 
@@ -128,5 +182,5 @@ body { background-color: rgb(172, 143, 143); /* ya lo quitaré */
 
         #titulo { width:80%;
                   }
-        
+        .grid4 {grid-template-columns:100%;}
 }
