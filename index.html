@@ -5,19 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web del Romanticismo - Inicio</title>
-     <!-- enlazo font awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- enlazo font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- enlazo la hoja de estilo -->
     <link rel="stylesheet" href="./css/index.css">
     <!-- enlazo el favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-   
+    
 </head>
 <body>
-    <div id="wrapper">
+    
         <nav>
-            <!-- aquí va la barra de navegación -->
-            botones de navegación
+            <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Inicio</a>
+                <a href="#intro">Introducción</a>
+                <a href="#ideas">Ideas</a>
+                <a href="#autores">Autores</a>
+                <a href="#">Galería</a>
+                <a href="#">Contacto</a>
+                <!-- este último vínculo es para el icono de menu hamburguesa-->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </nav>
     
         <section id="hero">   
@@ -58,6 +68,8 @@
            </div>
         </section>
     -->
+
+    <div id="wrapper">
         <section id="intro">
             <!-- que es el romanticismo -->
             <div class="titulo-seccion">
@@ -79,30 +91,31 @@
                 </div>
                 <div class="col2 texto">
                    <ul> 
-                    <li>Subjetividad vs. objetividad: se enfocaron en los sentimientos intensos y místicos, como miedo, pasión, locura y soledad</li>
+                    <li><strong>Subjetividad vs. objetividad:</strong> se enfocaron en los sentimientos intensos y místicos, como miedo, pasión, locura y soledad</li>
 
-                    <li>Imaginación vs. inteligencia: revalorizaron el papel de la imaginación en el arte en cualquier de las disciplinas artísticas</li>
+                    <li><strong>Imaginación vs. inteligencia:</strong> revalorizaron el papel de la imaginación en el arte en cualquier de las disciplinas artísticas</li>
                     
-                    <li>Lo sublime vs. belleza clásica: lo sublime se entendía como la percepción de la grandeza absoluta de lo contemplado</li>
+                    <li><strong>Lo sublime vs. belleza clásica:</strong> lo sublime se entendía como la percepción de la grandeza absoluta de lo contemplado</li>
                     
-                    <li>Individualismo: el romántico procura la expresión del yo, el reconocimiento de la identidad individual, de la singularidad</li>
+                    <li><strong>Individualismo:</strong> el romántico procura la expresión del yo, el reconocimiento de la identidad individual, de la singularidad</li>
                     
-                    <li>Nacionalismo: el nacionalismo fue la expresión colectiva de la búsqueda de la identidad del individuo. De allí el interés por el folclore</li>
+                    <li><strong>Nacionalismo:</strong> el nacionalismo fue la expresión colectiva de la búsqueda de la identidad del individuo. De allí el interés por el folclore</li>
                   </ul>
                 </div>
 
                 <div class="col2 texto">
-                  <ul>
-                    <li>Liberación de las reglas academicistas: subordinan la técnica a la expresión individual y no al contrario.</li>
+                  <ul id="lista2"><!-- un id para "subir" la segunda lista y que visualmente parezca una sola -->
+                    <li><strong>Liberación de las reglas academicistas: </strong>subordinan la técnica a la expresión individual y no al contrario.</li>
 
-                    <li>Redescubrimiento de la naturaleza: se convierte al paisaje en una metáfora del mundo interior y una fuente de inspiración</li>
+                    <li><strong>Redescubrimiento de la naturaleza:</strong> se convierte al paisaje en una metáfora del mundo interior y una fuente de inspiración</li>
 
-                    <li>Carácter visionario u onírico: sueños, pesadillas, fantasías y fantasmagorías, donde la imaginación se libera de lo racional</li>
+                    <li><strong>Carácter visionario u onírico: </strong>sueños, pesadillas, fantasías y fantasmagorías, donde la imaginación se libera de lo racional</li>
 
-                    <li>Nostalgia por el pasado:  sienten que con la modernización se han perdido la unidad entre el hombre y la naturaleza, e idealizan el pasado</li>
+                    <li><strong>Nostalgia por el pasado: </strong> sienten que con la modernización se han perdido la unidad entre el hombre y la naturaleza, e idealizan el pasado</li>
 
-                    <li>Idea de genio atormentado e incomprendido: se le distingue por su imaginación y originalidad y, también, por la narrativa de una vida atormentada.</li>
+                    <li><strong>Idea de genio atormentado e incomprendido: </strong>se le distingue por su imaginación y originalidad y, también, por la narrativa de una vida atormentada.</li>
                  </ul>
+                 <p class="centrado">Para saber más, visita <a class="enlace" href="https://www.culturagenial.com/es/romanticismo/" target="_blank">este blog</a></p>
                 </div>
                 <div class="col2 imagen">
                     <img src="./images/medusa.jpg" alt="La balsa de la Medusa de Gericault">
@@ -170,14 +183,20 @@
 
 
         </section>
+
+    </div>
         <footer>
             <div class="grid3">
                 <div class="col3">
                     <img src="./images/apache.png" alt="pluma literaria">
                 </div>
                 <div class="col3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea eaque omnis, quae odio quasi natus, alias architecto temporibus nostrum error. Impedit a laboriosam voluptates molestias quisquam quasi obcaecati ipsam.
-                    AQUÍ REPETIRÉ LA BARRA DE NAVEGACIÓN EL PRÓXIMO DÍA
+                    <a class="enlace" href="#">Inicio</a><br>
+                    <a class="enlace" href="#intro">Introducción</a><br>
+                    <a class="enlace" href="#ideas">Ideas</a><br>
+                    <a class="enlace" href="#autores">Autores</a><br>
+                    <a class="enlace" href="#galeria">Galería</a><br>
+                    <a class="enlace" href="#contacto">Contacto</a><br>
                 </div>
                 <div class="col3">
                     <p>Síguenos en redes sociales:</p>
@@ -190,6 +209,10 @@
                 </div>
             </div>
         </footer>
-    </div>
+    
+
+
+    <!-- enlace al archivo de js que está en carpeta aparte -->
+    <script src="./js/funciones.js"></script>
 </body>
 </html>
