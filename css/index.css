@@ -203,6 +203,12 @@ body { /*background-color: rgb(196, 172, 172); /* ya lo quitaré */
 
 /**************************** SECCIÓN INTRODUCCIÓN **************************/
 
+#texto-intro {padding:0 2%;
+              margin:0 4%;
+              text-indent:3rem;
+              border-left:5px solid darkred;}
+
+
 
 /**************************** SECCIÓN IDEAS ********************************/
 
