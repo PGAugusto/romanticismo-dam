@@ -27,6 +27,8 @@ body { /*background-color: rgb(196, 172, 172); /* ya lo quitaré */
           width:80%;
           margin:auto;}
 
+section {padding-bottom:4%}
+
 /****** título de secciones **********/
 
 .titulo-seccion {font-family: titulos;
@@ -118,7 +120,7 @@ body { /*background-color: rgb(196, 172, 172); /* ya lo quitaré */
 /***************  HERO SECTION  VERSION 1******************************************/
 
 #hero { background-image:url('../images/hero.jpg'); /* pongo foto */
-        height:90vh;                                /* dimensiono el alto */
+        height:100vh;                                /* dimensiono el alto */
         background-repeat:no-repeat;                /* evito la repetición */
         background-size:cover;                      /* la ajusto al espacio disponible */
         background-position:center;                 /* para no recortar la figura principal */
@@ -126,6 +128,7 @@ body { /*background-color: rgb(196, 172, 172); /* ya lo quitaré */
         font-family: titulos;
         font-size:3.5rem; /* agrando porque la fuente sale más pequeña */
         text-align:center;
+        font-weight:bold;
         padding-top: 20px;
 }
 
@@ -135,7 +138,7 @@ body { /*background-color: rgb(196, 172, 172); /* ya lo quitaré */
           border-radius:50%;
           width:50%;
           margin: auto;
-          padding:20px;
+          padding:15px;
           margin-top:20%;
           color:rgb(78, 0, 0);
 }
