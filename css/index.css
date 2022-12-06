@@ -19,7 +19,11 @@
 
 * {box-sizing:border-box;}   
 
-body { /*background-color: rgb(196, 172, 172); /* ya lo quitaré */
+/* para que el scroll sea suave (no funciona en todos los navegadores) */
+
+html {scroll-behavior: smooth;}
+
+body { background-color: rgb(236, 223, 223); 
        font-family:texto;
      }
 
@@ -27,7 +31,7 @@ body { /*background-color: rgb(196, 172, 172); /* ya lo quitaré */
           width:80%;
           margin:auto;}
 
-section {padding-bottom:4%}
+section {padding:6% 0;}
 
 /****** título de secciones **********/
 
@@ -65,7 +69,7 @@ section {padding-bottom:4%}
         .topnav a {
           float: left;
           display: block;
-          color: #777676;
+          color: white;
           text-align: center;
           padding: 14px 16px;
           text-decoration: none;
@@ -261,7 +265,7 @@ section {padding-bottom:4%}
 
 .card img {     /* selector contextual, solo para las img que estén DENTRO de una card */
             width:100%;
-            height:400px;  /* OJO, LAS FOTOS DEBERÍAN RETOCARSE DESDE FUERA  */
+            height:350px;  /* OJO, LAS FOTOS DEBERÍAN RETOCARSE DESDE FUERA  */
             filter: sepia();  /* opcional */
             opacity: 0.5;    /* opcional, para hacer un efecto dinámico con el ratón */
             transition: 1s;  /* cualquier cosa que pueda cambiar dinámicamente, tarda 1 segundo */
@@ -286,6 +290,34 @@ section {padding-bottom:4%}
 .card a:hover {background-color: rgb(158, 157, 157);
                color:rgb(68, 68, 68);}
 
+
+/************************** GALERÍA DE VIDEOS Y FOTOS **************/
+#galeria {background-color: #bababa;}
+/***** iframe responsive de How to para videos de youtube ********/
+.container-16-9 {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+      
+      /* Then style the iframe to fit in the container div with full height and width */
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+/************************** CONTACTO CON MAPS **************/
+
+/** el estilo del maps es el que tienen los videos de la sección galeria **/
+
+/** el estilo de la lista es el de la sección ideas ***/
+
 /************************** FOOTER CON GRID DE 3 COLUMNAS 25-25-50 ************/
 
 footer {background-color: #bababa;
@@ -296,7 +328,7 @@ footer {background-color: #bababa;
 
 .col3 {padding:6%;}        
 
-.col3 img {width:30%;
+.col3 img {width:50%;
            display:block;  /* se puede cambiar el tipo de componente de inline a block */
            margin:auto;}
 
