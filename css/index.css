@@ -400,4 +400,6 @@ footer {background-color: #bababa;
         #titulo { width:80%;
                   }
         .grid4 {grid-template-columns:100%;}
+
+        .grid3 {grid-template-columns:100%;}
 }
